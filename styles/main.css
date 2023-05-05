@@ -1,0 +1,215 @@
+html {
+	background-image: url("../images/bkgd.png");	
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+    width: 875px;
+    margin: 0 auto; 
+	padding: 0;}
+
+header { 
+    padding-bottom: 0;
+    border-bottom: 2px solid black; 
+}
+header h2 {
+    ...
+    text-shadow: 2px 3px 0 black; 
+    }
+footer {
+    margin-top: 2em;
+    border-top: 2px solid #81a28a;
+    padding-top: .7em; }
+
+#nav_menu {
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+main h2 {
+    color: peachpuff;
+}
+
+
+#nav_menu li {
+    display: block;
+    position: relative;
+    float: left;
+    background: #81a28a;
+    z-index:1;
+    /* menu background color */
+}
+
+#nav_menu li a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    width: 218.75px;
+    /* this is the width of the menu items */
+    line-height: 35px;
+    /* this is the hieght of the menu items */
+    color: peachpuff;
+    /* list item font color */
+}
+
+#nav_menu li li a {
+    font-size: 80%;
+}
+
+/* smaller font size for sub menu items */
+
+#nav_menu li:hover {
+    background: #81a29a;
+}
+
+/* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+#nav_menu ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+    /* hides sublists */
+}
+
+#nav_menu li:hover ul ul {
+    display: none;
+}
+
+/* hides sub-sublists */
+
+#nav_menu li:hover ul {
+    display: block;
+}
+
+/* shows sublist on hover */
+
+#nav_menu li li:hover ul {
+    display: block;
+    /* shows sub-sublist on hover */
+    margin-left: 200px;
+    /* this should be the same width as the parent list item */
+    margin-top: -35px;
+    /* aligns top of sub menu with top of list item */
+}
+
+
+/* Sidebar */
+aside {
+    width: 275px;
+    float: left;
+}
+
+.Collage{
+    width: 560px;
+    height: auto;
+    float: right;
+    margin: 10px black;
+}
+
+.Collage h2{
+    color: #81a28a;
+    text-align: center;
+}
+
+.Collage p{
+    text-indent: 40px;
+    
+}
+
+#nav_menu_1 ul { 
+    list-style-type: none;
+    margin-left: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
+#nav_menu_1 ul li { 
+    width: 200px;
+    margin-bottom: .5em;
+    border: 2px solid black; }
+#nav_menu_1 ul li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; 
+    background-color: peachpuff;}
+#nav_menu_1 ul li a.current {
+    background-color: silver; }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+    
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #81a28a;
+    border-radius: 25px;
+    text-align: center;
+    width: 580px;
+    height: 150px;  
+}
+.centered p{
+    font-size: 15px;
+}
+.top {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.top p{
+    font-size: 15px;
+}
+.left {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 275px;
+    height: auto;
+    font-size: 30px;
+}
+.menu{
+    align-items: center;
+}
+a:link {
+    color: #81a28a;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: peachpuff;
+  }
+
+.footer__content-bottom{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.footer__copyright{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
