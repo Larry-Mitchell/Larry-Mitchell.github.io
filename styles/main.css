@@ -1,37 +1,38 @@
-html {
-	background-image: url("../images/bkgd.png");	
-}
-
 body {
+    background-color: var(--color2);
     font-family: "Josefin Sans", sans-serif;
     align-items: center;
     width: 875px;
     margin: 0 auto; 
-	padding: 0;}
+	padding: 0;
+    color: var(--color1);
+}
 
 header { 
     padding-bottom: 0;
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid var(--color1);
 }
 header h2 {
-    ...
-    text-shadow: 2px 3px 0 black; 
+    color: var(--color1);
+    text-shadow: 2px 3px 0 black;
     }
 footer {
     margin-top: 2em;
-    border-top: 2px solid #81a28a;
-    padding-top: .7em; }
+    border-top: 2px solid var(--color1);
+    padding-top: .7em; 
+    color: var(--color1);
+}
 
 #nav_menu {
+    align-self: center;
     list-style: none inside;
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
 
 main h2 {
-    color: peachpuff;
+    color: var(--color1);
 }
 
 
@@ -39,8 +40,8 @@ main h2 {
     display: block;
     position: relative;
     float: left;
-    background: #81a28a;
-    z-index:1;
+    background: var(--color2);
+    z-index:3;
     /* menu background color */
 }
 
@@ -52,7 +53,7 @@ main h2 {
     /* this is the width of the menu items */
     line-height: 35px;
     /* this is the hieght of the menu items */
-    color: peachpuff;
+    color: var(--color1);
     /* list item font color */
 }
 
@@ -63,7 +64,7 @@ main h2 {
 /* smaller font size for sub menu items */
 
 #nav_menu li:hover {
-    background: #81a29a;
+    background: var(--color3)
 }
 
 /* highlights current hovered list item and the parent list items when hovering over sub menues */
@@ -112,7 +113,7 @@ aside {
 }
 
 .Collage h2{
-    color: #81a28a;
+    color: var(--color5);
     text-align: center;
 }
 
@@ -144,25 +145,23 @@ aside {
 .container {
     position: relative;
     text-align: left;
-    color: white;
-    
+    color: var(--color3);
 }
 
 /* Centered text */
 .centered {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #81a28a;
     border-radius: 25px;
     text-align: center;
     width: 580px;
-    height: 150px;  
+    height: 150px;
+    color: black;
+    font-style: bold;
 }
-.centered p{
-    font-size: 15px;
-}
+
 .top {
     position: absolute;
     top: 40%;
@@ -178,7 +177,6 @@ aside {
     top: 50%;
     left: 29%;
     transform: translate(-50%, -50%);
-    background-color: white;
     border-radius: 20px;
     text-align: center;
     width: 275px;
@@ -189,9 +187,8 @@ aside {
     align-items: center;
 }
 a:link {
-    color: #81a28a;
+    color: var(--color3);
   }
-  
   /* visited link */
   a:visited {
     color: black;
@@ -199,7 +196,7 @@ a:link {
   
   /* mouse over link */
   a:hover {
-    color: peachpuff;
+    color: var(--color5);
   }
 
 .footer__content-bottom{
@@ -212,4 +209,101 @@ a:link {
     display: flex;
     align-items: center; 
     justify-content: center;
+}
+
+.page-width-desktop {
+    padding: 0;
+    margin: 0 auto;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    text-align: left;
+    color: var(--color1);;
+    width: 875px;
+    height: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--color1);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--color1);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+:root {
+        /*Text Color*/
+    --color1: #f2f2f2;
+        /*Main Background Color*/
+    --color2: #142e0e;
+        /*Accent Colors*/ 
+    --color3: #81a29a;
 }
