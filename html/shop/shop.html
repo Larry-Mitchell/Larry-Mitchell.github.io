@@ -1,0 +1,201 @@
+<head>
+	<meta charset="utf-8" />
+	<title>Flora</title>
+	<link rel="stylesheet" href="../../css/shops.css">
+</head>
+
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <h2 style="color: white;">FLORA</h2>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../About.html">About</a></li>
+        <li><a href="../Email.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img src="../../images/cart.png" alt="" width="30px" height="30px" /></a>
+    <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+  </div>
+</div>
+
+<div class="small-container">
+  <div class="row row-2">
+    <h2>All Products</h2>
+    <select>
+      <option value="">Default Shorting</option>
+      <option value="">Short by price</option>
+      <option value="">Short by popularity</option>
+      <option value="">Short by rating</option>
+      <option value="">Short by sale</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img1.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img2.PNG" alt="" />
+      <h4>Red & Green Grass</h4>
+      <p>$15.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img3.PNG" alt="" />
+      <h4>Pointy Leaves</h4>
+      <p>$15.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img4.PNG" alt="" />
+      <h4>Succulent Tray</h4>
+      <p>$20.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img5.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img6.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img7.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img8.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img9.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img10.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img11.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img12.PNG" alt="" />
+      <h4>Small Succulent</h4>
+      <p>$3.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img13.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img14.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$5.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img15.PNG" alt="" />
+      <h4>Green Plants</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="../../../VS Project/images/products/img16.PNG" alt="" />
+      <h4>Red Plant</h4>
+      <p>$15.00</p>
+    </div>
+  </div>
+
+  <div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594;</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      
+
+      <div class="footer-col-2">
+        <h2 style="color: white;">FLORA</h2>
+        <p>
+          Our Purpose Is To Sustainably Provide Plants and Plant accesories to make the world a greener place!
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+  var MenuItems = document.getElementById('MenuItems');
+  MenuItems.style.maxHeight = '0px';
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px';
+    } else {
+      MenuItems.style.maxHeight = '0px';
+    }
+  }
+</script>
